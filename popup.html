@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hot links</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+		body{
+		font-size: 14px;
+        margin: 0;
+        min-height: 80px;
+        padding: 0;
+        width: 380px;
+		}
+		h3 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #2f5876;	
+		}
+		a:link,
+		a:visited {
+		color: #000000;
+        outline: 0;
+        text-decoration: none;
+		}
+		.modal-menu-header{
+		display: flex;
+		justify-content: space-around;	
+		align-content: center;	
+		align-items: center;
+        border-bottom: 0.5px solid #dadada;
+		}
+		.modal-icons{
+		display: flex;
+		flex-direction: column;	
+		border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+		}
+		.flex-container {
+		display: flex;
+        justify-content: space-between;
+        padding: 10px 22px;
+        border-bottom: 0.5px solid #dadada;
+		}
+		.flex-item{
+		opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        width: 120px;
+        
+		}
+		.flex-item:hover{
+			 opacity: 0.4;
+			 cursor: pointer;
+		}
+		.fa{
+			font-size: 20px;
+			color: #2f5876;
+		}
+		.add-link-btn{
+			display: block;
+		}
+		.add-link-btn:hover{
+			cursor: pointer;
+		}
+		.btn-hidden{
+			display: none;
+		}
+		.hide-link-btn{
+			transition: 0.6s ease;
+		}
+		.hide-link-btn:hover{
+			cursor: pointer;
+		}
+		.add-link-url{
+			transition: 0.6s ease;
+		}
+		.more-flex{
+			transition: 0.8s ease;
+		}
+	</style>
+</head>
+<body>
+	<div class='modal-menu-header'>
+		<h3>Hot links</h3>
+		<button id='add-b' class='add-link-btn'><i class='fa fa-plus'></i></button>
+		<input id ='create-i' class='add-link-url btn-hidden'/>
+		<button id='hide-b' class='hide-link-btn btn-hidden'><i class="fa fa-check"></i></button>
+	</div>
+	<div class='modal-icons'>
+		<div class="flex-container">
+			<div class='flex-item'>
+				<a href="https://gmail.com" target="_blank">
+					<i class="fa fa-envelope-o"></i>
+				</a>
+			</div>
+			<div class='flex-item'>
+				<a href="https://google.com" target="_blank">
+					<i class="fa fa-google"></i>
+				</a>
+			</div>
+			<div class='flex-item'>
+				<a href="https://facebook.com" target="_blank">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</div>
+			<div class='flex-item'>
+				<a href="https://vk.com" target="_blank">
+					<i class="fa fa-vk"></i>
+			    </a>
+			</div>
+			<div class='flex-item'>
+				<a href="https://youtube.com" target="_blank">
+					<i class="fa fa-youtube"></i>
+				</a>
+			</div>			
+		</div>
+			<div id='more-flex' class='more-flex flex-container btn-hidden'>
+				<div class="flex-item">
+					<a href="https://github.com">
+						<i class="fa fa-github">
+							
+						</i>
+					</a>
+				</div>
+				<div class="flex-item">
+					<a href="https://steam.com">
+						<i class="fa fa-steam">
+							
+						</i>
+					</a>
+				</div>
+				<div class="flex-item">
+					<a href="https://amazon.com">
+						<i class="fa fa-amazon">
+							
+						</i>
+					</a>
+				</div>
+				<div class="flex-item">
+					<a href="https://instagram.com">
+						<i class="fa fa-instagram">							
+						</i>
+					</a>
+				</div>
+				<div class="flex-item">
+					<a href="https://whatsapp.com">
+						<i class="fa fa-whatsapp">
+
+						</i>
+					</a>
+				</div>
+			</div>
+	</div>
+</body>
+<script src="script.js" type="text/javascript"></script>
+</html>
